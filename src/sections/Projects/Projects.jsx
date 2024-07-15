@@ -13,8 +13,8 @@ function Projects() {
         <ProjectCard
           src={viberr}
           link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Viberr"
-          p="Streaming App"
+          h3="Planty"
+          p="Farming Website for Disease Identification"
         />
         <ProjectCard
           src={freshBurger}
@@ -25,8 +25,8 @@ function Projects() {
         <ProjectCard
           src={hipsster}
           link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Hipsster"
-          p="Glasses Shop"
+          h3="GigaLego"
+          p="GigaLegoConstruction"
         />
         <ProjectCard
           src={fitLift}

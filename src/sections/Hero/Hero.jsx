@@ -25,7 +25,7 @@ function Hero() {
         <img
           src={heroImg}
           className={styles.hero}
-          alt="Profile picture of Harris Johnsen"
+          alt="Profile picture of Vivek Kumar"
         />
         <img
           className={styles.colorMode}
@@ -36,11 +36,11 @@ function Hero() {
       </div>
       <div className={styles.info}>
         <h1>
-          Harris
+          Vivek
           <br />
-          Johnsen
+          Kumar
         </h1>
-        <h2>Frontend Developer</h2>
+        <h2>Full Stack & ML Developer</h2>
         <span>
           <a href="https://twitter.com/" target="_blank">
             <img src={twitterIcon} alt="Twitter icon" />
@@ -53,8 +53,7 @@ function Hero() {
           </a>
         </span>
         <p className={styles.description}>
-          With a passion for developing modern React web apps for commercial
-          businesses.
+          With a passion for coding and developing new  things . I beilive in code and data .
         </p>
         <a href={CV} download>
           <button className="hover">Resume</button>
