@@ -16,15 +16,22 @@ function Skills() {
         <SkillList src={checkMarkIcon} skill="CSS" />
         <SkillList src={checkMarkIcon} skill="JavaScript" />
         <SkillList src={checkMarkIcon} skill="TypeScript" />
-        <SkillList src={checkMarkIcon} skill="Node" />
+        <SkillList src={checkMarkIcon} skill="Node JS" />
+        <SkillList src={checkMarkIcon} skill="Express JS" />
+        <SkillList src={checkMarkIcon} skill="NEXT JS" />
+        <SkillList src={checkMarkIcon} skill="React JS" />
+        <SkillList src={checkMarkIcon} skill="Vue JS" />
+        <SkillList src={checkMarkIcon} skill="Tailwind & Bootstrap CSS" />
       </div>
       <hr />
       <div className={styles.skillList}>
-        <SkillList src={checkMarkIcon} skill="React" />
+
         <SkillList src={checkMarkIcon} skill="Machine Learning" />
         <SkillList src={checkMarkIcon} skill="Artificial Inteligence" />
-        <SkillList src={checkMarkIcon} skill="React" />
-        <SkillList src={checkMarkIcon} skill="Tailwind CSS" />
+        <SkillList src={checkMarkIcon} skill="Verilog & VLSI" />
+        <SkillList src={checkMarkIcon} skill="Signal Processing" />
+        <SkillList src={checkMarkIcon} skill="MATLAB" />
+        <SkillList src={checkMarkIcon} skill="IOT and Embedded Systems" />
       </div>
       <hr />
       <div className={styles.skillList}>
@@ -32,7 +39,9 @@ function Skills() {
         <SkillList src={checkMarkIcon} skill="Webpack" />
         <SkillList src={checkMarkIcon} skill="Git" />
         <SkillList src={checkMarkIcon} skill="Jest" />
-        <SkillList src={checkMarkIcon} skill="Bootstrap" />
+        <SkillList src={checkMarkIcon} skill="Docker" />
+        <SkillList src={checkMarkIcon} skill="AWS" />
+        <SkillList src={checkMarkIcon} skill="NGINX & APACHE" />
       </div>
     </section>
   );

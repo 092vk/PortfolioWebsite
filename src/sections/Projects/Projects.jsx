@@ -1,8 +1,8 @@
 import styles from './ProjectsStyles.module.css';
-import viberr from '../../assets/viberr.png';
-import freshBurger from '../../assets/fresh-burger.png';
-import hipsster from '../../assets/hipsster.png';
-import fitLift from '../../assets/fitlift.png';
+import DrShaboinky from '../../assets/DrShaboinky.avif';
+import batteryHealth from '../../assets/batteryHealth.jpg';
+import GigaLego from '../../assets/GigaLego.svg';
+import farmy from '../../assets/farmy.webp';
 import ProjectCard from '../../common/ProjectCard';
 
 function Projects() {
@@ -11,28 +11,28 @@ function Projects() {
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
-          src={viberr}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Planty"
-          p="Farming Website for Disease Identification"
+          src={DrShaboinky}
+          link="https://healthchatbot-dr-shaboinky-2.onrender.com/"
+          h3="Dr. Shaboinky"
+          p="Medical Chatbot"
         />
         <ProjectCard
-          src={freshBurger}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="Fresh Burger"
-          p="Hamburger Restaurant"
+          src={batteryHealth}
+          link="https://github.com/092vk/SOH_RUL_Estimation"
+          h3="Battery Health Predictor"
+          p="Predicts SOH & RUL of Li Battery"
         />
         <ProjectCard
-          src={hipsster}
-          link="https://github.com/Ade-mir/company-landing-page-2"
+          src={GigaLego}
+          link="https://gigalegoconstruction.com/"
           h3="GigaLego"
           p="GigaLegoConstruction"
         />
         <ProjectCard
-          src={fitLift}
-          link="https://github.com/Ade-mir/company-landing-page-2"
-          h3="FitLift"
-          p="Fitness App"
+          src={farmy}
+          link="https://main--earnest-lily-fd0061.netlify.app/"
+          h3="Farmy"
+          p="Farmers App"
         />
       </div>
     </section>

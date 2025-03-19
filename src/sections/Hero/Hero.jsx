@@ -38,9 +38,9 @@ function Hero() {
         <h1>
           Vivek
           <br />
-          Kumar
+          Kumar Ray
         </h1>
-        <h2>Full Stack & ML Developer</h2>
+        <h2>Full Stack Web & ML Developer</h2>
         <span>
           <a href="https://twitter.com/" target="_blank">
             <img src={twitterIcon} alt="Twitter icon" />
@@ -53,7 +53,7 @@ function Hero() {
           </a>
         </span>
         <p className={styles.description}>
-          With a passion for coding and developing new  things . I beilive in code and data .
+          Love building stuff. Tinker around with code and circuits all day.
         </p>
         <a href={CV} download>
           <button className="hover">Resume</button>
