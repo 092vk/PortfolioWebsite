@@ -11,10 +11,10 @@ function Projects() {
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
         <ProjectCard
-          src={DrShaboinky}
-          link="https://healthchatbot-dr-shaboinky-2.onrender.com/"
-          h3="Dr. Shaboinky"
-          p="Medical Chatbot"
+          src={GigaLego}
+          link="https://gigalegoconstruction.com/"
+          h3="GigaLego"
+          p="GigaLegoConstruction"
         />
         <ProjectCard
           src={batteryHealth}
@@ -23,10 +23,10 @@ function Projects() {
           p="Predicts SOH & RUL of Li Battery"
         />
         <ProjectCard
-          src={GigaLego}
-          link="https://gigalegoconstruction.com/"
-          h3="GigaLego"
-          p="GigaLegoConstruction"
+          src={DrShaboinky}
+          link="https://healthchatbot-dr-shaboinky-2.onrender.com/"
+          h3="Dr. Shaboinky"
+          p="Medical Chatbot"
         />
         <ProjectCard
           src={farmy}
