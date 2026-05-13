@@ -40,7 +40,6 @@ function Hero() {
           <br />
           Kumar Ray
         </h1>
-        <h2>Full Stack Web & ML Developer</h2>
         <span>
           <a href="https://twitter.com/" target="_blank">
             <img src={twitterIcon} alt="Twitter icon" />

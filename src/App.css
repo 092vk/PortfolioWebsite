@@ -1,5 +1,6 @@
 :root {
   --background-color: #fff;
+  --card-bg: #f4f4f4;
   --btn-color: #0987f2;
   --btn-text-color: #fff;
   --project-card-bg: #ffffff00;
@@ -10,12 +11,17 @@
 
 [data-theme='dark'] {
   --background-color: #222;
+  --card-bg: #2d2d2d;
   --btn-color: #fff;
   --btn-text-color: #222;
-  --project-card-bg: #fff;
+  --project-card-bg: #ffffff00;
   --text-color: #fff;
   --form-text-color: #fff;
   --footer-text-color: #bbb;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -28,7 +34,19 @@ body {
 #root {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 60px;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  padding: 96px clamp(24px, 4vw, 64px) 0;
+}
+
+section {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  scroll-margin-top: 110px;
 }
 
 h1,
@@ -77,6 +95,7 @@ p {
 @media (width >= 800px) {
   #root {
     gap: 100px;
+    padding-top: 110px;
   }
   h1 {
     font-size: 40px;
@@ -96,6 +115,7 @@ p {
   @media (width >= 1400px) {
     #root {
       gap: 200px;
+      padding-top: 120px;
     }
     h1 {
       font-size: 48px;

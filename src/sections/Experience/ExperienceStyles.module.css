@@ -1,0 +1,165 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  position: relative;
+  padding-left: 18px;
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.markerWrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.marker {
+  width: 14px;
+  height: 14px;
+  margin-top: 28px;
+  border-radius: 999px;
+  background: var(--btn-color);
+  border: 3px solid var(--background-color);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--btn-color) 20%, transparent);
+  z-index: 1;
+}
+
+.line {
+  position: absolute;
+  top: 38px;
+  bottom: -18px;
+  width: 2px;
+  background: color-mix(in srgb, var(--btn-color) 32%, transparent);
+}
+
+.card {
+  padding: 20px 22px;
+  border-radius: 24px;
+  background: var(--card-bg);
+  border: 1px solid color-mix(in srgb, var(--text-color) 10%, transparent);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}
+
+.summary {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 18px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+}
+
+.summaryText {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.summaryAside {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-shrink: 0;
+}
+
+.chevron {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--btn-color) 12%, transparent);
+  color: var(--btn-color);
+  font-size: 24px;
+  line-height: 1;
+  transform: rotate(90deg);
+  transition: transform 200ms ease-in-out;
+}
+
+.chevronOpen {
+  transform: rotate(270deg);
+}
+
+.details {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 220ms ease, opacity 220ms ease, margin-top 220ms ease;
+}
+
+.detailsOpen {
+  max-height: 420px;
+  opacity: 1;
+  margin-top: 16px;
+}
+
+.meta,
+.duration {
+  font-size: 14px;
+  color: var(--footer-text-color);
+}
+
+.details ul {
+  margin: 0;
+  padding-left: 20px;
+  display: grid;
+  gap: 10px;
+}
+
+.details li {
+  color: var(--text-color);
+  font-family: 'Roboto Mono', monospace;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+@media (width >= 800px) {
+  .timeline {
+    padding-left: 24px;
+  }
+
+  .entry {
+    grid-template-columns: 22px 1fr;
+    gap: 20px;
+  }
+
+  .marker {
+    width: 16px;
+    height: 16px;
+    margin-top: 30px;
+  }
+
+  .line {
+    top: 42px;
+  }
+
+  .card {
+    padding: 24px 26px;
+  }
+
+  .summaryAside {
+    white-space: nowrap;
+  }
+
+  .details li {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,121 @@
+.container {
+  position: fixed;
+  top: 16px;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 20px;
+  pointer-events: none;
+}
+
+.toggleButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  width: 48px;
+  height: 48px;
+  border: 1px solid color-mix(in srgb, var(--text-color) 16%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--background-color) 88%, transparent);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.toggleButton span {
+  display: block;
+  width: 18px;
+  height: 2px;
+  border-radius: 999px;
+  background: var(--text-color);
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.28);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 220ms ease-in-out;
+}
+
+.backdropOpen {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100dvh;
+  width: min(82vw, 320px);
+  padding: 96px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: color-mix(in srgb, var(--background-color) 92%, transparent);
+  backdrop-filter: blur(14px);
+  border-left: 1px solid color-mix(in srgb, var(--text-color) 14%, transparent);
+  box-shadow: -18px 0 36px rgba(0, 0, 0, 0.18);
+  transform: translateX(110%);
+  transition: transform 220ms ease-in-out;
+  pointer-events: auto;
+}
+
+.navOpen {
+  transform: translateX(0);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  padding: 14px 16px;
+  border-radius: 999px;
+  transition: background-color 200ms ease-in-out, transform 200ms ease-in-out,
+    color 200ms ease-in-out;
+}
+
+.link:hover {
+  background-color: var(--btn-color);
+  color: var(--btn-text-color);
+  transform: translateY(-1px);
+}
+
+@media (width >= 800px) {
+  .toggleButton,
+  .backdrop {
+    display: none;
+  }
+
+  .container {
+    justify-content: center;
+  }
+
+  .nav {
+    position: static;
+    height: auto;
+    width: auto;
+    padding: 14px 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    border: 1px solid color-mix(in srgb, var(--text-color) 16%, transparent);
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--background-color) 82%, transparent);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    transform: none;
+  }
+
+  .link {
+    font-size: 16px;
+  }
+}
